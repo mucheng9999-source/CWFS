@@ -1,0 +1,19 @@
+#!/bin/sh
+##
+## @package cwfs
+## @file cwfs
+## @brief main script to run cwfs
+##
+## @brief Created by:
+## @authors: Bo Xin & Chuck Claver
+## @       Large Synoptic Survey Telescope
+
+## See the README file for its usage.
+
+if [ ! -z $LSST_LIBRARY_PATH ]; then	# work around os/x's SIP restrictions
+    export LD_LIBRARY_PATH=$LSST_LIBRARY_PATH
+    export DYLD_LIBRARY_PATH=$LSST_LIBRARY_PATH
+fi
+
+python $(dirname ${BASH_SOURCE[0]})/cwfs.py "$@"
+

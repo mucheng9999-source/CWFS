@@ -1,0 +1,6 @@
+#USTC telescope parameters:
+Obscuration 				0.214
+Focal_length (m)			1.75
+Aperture_diameter (m)   	0.7
+Offset (m)				    8e-3
+Pixel_size (m)		        3.45e-6
