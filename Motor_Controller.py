@@ -65,8 +65,7 @@ def main():
     # 设置Fusion样式
     app.setStyle(QStyleFactory.create('Fusion'))
     
-    #
-    
+
     # 创建主窗口
     main_window = MainWindow(user_role="GUEST", username="访客")
     main_window.show()
